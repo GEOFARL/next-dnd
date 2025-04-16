@@ -1,5 +1,83 @@
 @import "tailwindcss";
 
+@font-face {
+  font-family: "TacticSans";
+  src: url("/fonts/tactic-sans-medium.eot");
+  src: url("/fonts/tactic-sans-medium.eot?#iefix") format("embedded-opentype"),
+    url("/fonts/tactic-sans-medium.woff2") format("woff2"),
+    url("/fonts/tactic-sans-medium.woff") format("woff");
+  font-weight: 500;
+  font-style: normal;
+  font-display: swap;
+}
+
+@font-face {
+  font-family: "Volksans";
+  src: url("/fonts/volksansTest-Light-BF63eee6e34a6ac.otf") format("opentype");
+  font-weight: 300;
+  font-style: normal;
+  font-display: swap;
+}
+
+@font-face {
+  font-family: "Volksans";
+  src: url("/fonts/volksansTest-Regular-BF63eee6e3c8d0e.otf") format("opentype");
+  font-weight: 400;
+  font-style: normal;
+  font-display: swap;
+}
+
+@font-face {
+  font-family: "Volksans";
+  src: url("/fonts/volksansTest-Normal-BF63eee6e350bce.otf") format("opentype");
+  font-weight: 500;
+  font-style: normal;
+  font-display: swap;
+}
+
+@font-face {
+  font-family: "Volksans";
+  src: url("/fonts/volksansTest-SemiBold-BF63eee6e3e5233.otf")
+    format("opentype");
+  font-weight: 600;
+  font-style: normal;
+  font-display: swap;
+}
+
+@font-face {
+  font-family: "Volksans";
+  src: url("/fonts/volksansTest-Bold-BF63eee6e2577d0.otf") format("opentype");
+  font-weight: 700;
+  font-style: normal;
+  font-display: swap;
+}
+
+@font-face {
+  font-family: "Volksans";
+  src: url("/fonts/volksansTest-Black-BF63eee6e404e28.otf") format("opentype");
+  font-weight: 800;
+  font-style: normal;
+  font-display: swap;
+}
+
+@theme {
+  --font-tactic: "TacticSans", sans-serif;
+  --font-volksans: "Volksans", sans-serif;
+
+  --color-main: #030303;
+  --color-secondary: #171717;
+  --color-content: #9d9d95;
+  --color-content-muted: #e5e5dd;
+  --color-neon: #b5ff4d;
+  --color-orange: #ffad33;
+  --color-grey: #cccccc;
+  --color-subdue: #9d9d95;
+
+  --shadow-neon: 0 0 0 0.5px #b5ff4d33, 0 0 8px #b5ff4d1a;
+  --shadow-orange: 0 0 0 0.5px #ffad3333, 0 0 8px #ffad331a;
+  --shadow-grey: 0 0 0 0.5px #cccccc33, 0 0 8px #cccccc1a;
+}
+
 :root {
   --background: #ffffff;
   --foreground: #171717;
@@ -22,5 +100,5 @@
 body {
   background: var(--background);
   color: var(--foreground);
-  font-family: Arial, Helvetica, sans-serif;
+  font-family: "Volksans", sans-serif;
 }
